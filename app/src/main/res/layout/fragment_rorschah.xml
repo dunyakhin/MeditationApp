@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rorschah_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/test_background"
+    tools:context=".fragments.RorschahFragment">
+
+    <ImageButton
+        android:id="@+id/backButton4"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:onClick="onChange"
+        android:src="?attr/homeAsUpIndicator"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="403dp"
+        android:layout_height="689dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Вопрос 1: что видите на картинке?"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/firstRorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    app:srcCompat="@drawable/ror1"
+                    tools:srcCompat="@drawable/ror1" />
+
+                <RadioGroup
+                    android:id="@+id/group1"
+                    android:layout_width="match_parent"
+                    android:layout_height="353dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/firstRadioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Военную эмблему" />
+
+                    <RadioButton
+                        android:id="@+id/firstRadioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Грязь" />
+
+                    <RadioButton
+                        android:id="@+id/firstRadioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Летучую мышь" />
+
+                    <RadioButton
+                        android:id="@+id/firstRadioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Двух человек" />
+
+                    <RadioButton
+                        android:id="@+id/firstRadioButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Тазовые кости" />
+
+                    <RadioButton
+                        android:id="@+id/firstRadioButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Рентгеновский снимок" />
+
+                    <RadioButton
+                        android:id="@+id/firstRadioButton7"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Клешни краба" />
+
+                    <RadioButton
+                        android:id="@+id/firstRadioButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Грязные разводы" />
+
+                    <RadioButton
+                        android:id="@+id/firstRadioButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Часть своего тела" />
+
+                    <RadioButton
+                        android:id="@+id/firstRadioButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Ничего из перечисленного" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="______________________________________"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Вопрос 2: что видите на картинке?"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/secondRorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    app:srcCompat="@drawable/ror2"
+                    tools:srcCompat="@drawable/ror2" />
+
+                <RadioGroup
+                    android:id="@+id/group2"
+                    android:layout_width="match_parent"
+                    android:layout_height="353dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/secondRadioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Раздавленное насекомое" />
+
+                    <RadioButton
+                        android:id="@+id/secondRadioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Двух шотландских терьеров" />
+
+                    <RadioButton
+                        android:id="@+id/secondRadioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Два маленьких лица в профиль" />
+
+                    <RadioButton
+                        android:id="@+id/secondRadioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Позвоночник с пятнами крови" />
+
+                    <RadioButton
+                        android:id="@+id/secondRadioButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Белый женский топик" />
+
+                    <RadioButton
+                        android:id="@+id/secondRadioButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Взврывающуюся бомбу" />
+
+                    <RadioButton
+                        android:id="@+id/secondRadioButton7"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Двух слонов" />
+
+                    <RadioButton
+                        android:id="@+id/secondRadioButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Двух клоунов" />
+
+                    <RadioButton
+                        android:id="@+id/secondRadioButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Черное с красным" />
+
+                    <RadioButton
+                        android:id="@+id/secondRadioButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Ничего из перечисленного" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="______________________________________"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Вопрос 3: что видите на картинке?"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/thirdRorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    app:srcCompat="@drawable/ror3"
+                    tools:srcCompat="@drawable/ror3" />
+
+                <RadioGroup
+                    android:id="@+id/group3"
+                    android:layout_width="match_parent"
+                    android:layout_height="353dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/thirdRadioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Двух птиц" />
+
+                    <RadioButton
+                        android:id="@+id/thirdRadioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Мясо в мясной лавке" />
+
+                    <RadioButton
+                        android:id="@+id/thirdRadioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Двух человек" />
+
+                    <RadioButton
+                        android:id="@+id/thirdRadioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Часть своего тела" />
+
+                    <RadioButton
+                        android:id="@+id/thirdRadioButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Красное с черным" />
+
+                    <RadioButton
+                        android:id="@+id/thirdRadioButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Красную бабочку" />
+
+                    <RadioButton
+                        android:id="@+id/thirdRadioButton7"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Пятна крови или краски" />
+
+                    <RadioButton
+                        android:id="@+id/thirdRadioButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Обезьян, висящих на хвостах" />
+
+                    <RadioButton
+                        android:id="@+id/thirdRadioButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Красный галстук-бабочку" />
+
+                    <RadioButton
+                        android:id="@+id/thirdRadioButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Ничего из перечисленного" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="______________________________________"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Вопрос 4: что видите на картинке?"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/forthRorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    app:srcCompat="@drawable/ror4"
+                    tools:srcCompat="@drawable/ror4" />
+
+                <RadioGroup
+                    android:id="@+id/group4"
+                    android:layout_width="match_parent"
+                    android:layout_height="353dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/forthRadioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Голову животного" />
+
+                    <RadioButton
+                        android:id="@+id/forthRadioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Легкие и грудную клетку" />
+
+                    <RadioButton
+                        android:id="@+id/forthRadioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Грязные разводы" />
+
+                    <RadioButton
+                        android:id="@+id/forthRadioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Пару ботинок" />
+
+                    <RadioButton
+                        android:id="@+id/forthRadioButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Черный дым и грязь" />
+
+                    <RadioButton
+                        android:id="@+id/forthRadioButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Человека в шубе" />
+
+                    <RadioButton
+                        android:id="@+id/forthRadioButton7"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Шкуру животного" />
+
+                    <RadioButton
+                        android:id="@+id/forthRadioButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Большую гориллу" />
+
+                    <RadioButton
+                        android:id="@+id/forthRadioButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Рентгеновский снимок" />
+
+                    <RadioButton
+                        android:id="@+id/forthRadioButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Ничего из перечисленного" />
+
+                    <ImageButton
+                        android:id="@+id/backButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:onClick="onChange"
+                        android:src="?attr/homeAsUpIndicator" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="______________________________________"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Вопрос 5: что видите на картинке?"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/fifthRorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    app:srcCompat="@drawable/ror5"
+                    tools:srcCompat="@drawable/ror5" />
+
+                <RadioGroup
+                    android:id="@+id/group5"
+                    android:layout_width="match_parent"
+                    android:layout_height="353dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/fifthRadioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Голову крокодила" />
+
+                    <RadioButton
+                        android:id="@+id/fifthRadioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Переломанное тело" />
+
+                    <RadioButton
+                        android:id="@+id/fifthRadioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Танцовщицу" />
+
+                    <RadioButton
+                        android:id="@+id/fifthRadioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Рентгеновский снимок" />
+
+                    <RadioButton
+                        android:id="@+id/fifthRadioButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Ноги" />
+
+                    <RadioButton
+                        android:id="@+id/fifthRadioButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Бабочку или летучую мышь" />
+
+                    <RadioButton
+                        android:id="@+id/fifthRadioButton7"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Легкие и грудную клетку" />
+
+                    <RadioButton
+                        android:id="@+id/fifthRadioButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Черные облака" />
+
+                    <RadioButton
+                        android:id="@+id/fifthRadioButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Плоскогубцы" />
+
+                    <RadioButton
+                        android:id="@+id/fifthRadioButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Ничего из перечисленного" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="______________________________________"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Вопрос 6: что видите на картинке?"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/sixthRorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    app:srcCompat="@drawable/ror6"
+                    tools:srcCompat="@drawable/ror6" />
+
+                <RadioGroup
+                    android:id="@+id/group6"
+                    android:layout_width="match_parent"
+                    android:layout_height="353dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/sixthRadioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Две коронованные головы" />
+
+                    <RadioButton
+                        android:id="@+id/sixthRadioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Рентгеновский снимок" />
+
+                    <RadioButton
+                        android:id="@+id/sixthRadioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Половые органы" />
+
+                    <RadioButton
+                        android:id="@+id/sixthRadioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Языческого идола на шесте" />
+
+                    <RadioButton
+                        android:id="@+id/sixthRadioButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Меховой ковер" />
+
+                    <RadioButton
+                        android:id="@+id/sixthRadioButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Грязь и воду" />
+
+                    <RadioButton
+                        android:id="@+id/sixthRadioButton7"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Гладкий столб" />
+
+                    <RadioButton
+                        android:id="@+id/sixthRadioButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Черепаху" />
+
+                    <RadioButton
+                        android:id="@+id/sixthRadioButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Серое пятно" />
+
+                    <RadioButton
+                        android:id="@+id/sixthRadioButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Ничего из перечисленного" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="______________________________________"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Вопрос 7: что видите на картинке?"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/seventhRorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    app:srcCompat="@drawable/ror7"
+                    tools:srcCompat="@drawable/ror7" />
+
+                <RadioGroup
+                    android:id="@+id/group7"
+                    android:layout_width="match_parent"
+                    android:layout_height="353dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/seventhRadioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Дым или облака" />
+
+                    <RadioButton
+                        android:id="@+id/seventhRadioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Двух беседующих женщин" />
+
+                    <RadioButton
+                        android:id="@+id/seventhRadioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Часть своего тела" />
+
+                    <RadioButton
+                        android:id="@+id/seventhRadioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Животных или головы животных" />
+
+                    <RadioButton
+                        android:id="@+id/seventhRadioButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Географическую карту" />
+
+                    <RadioButton
+                        android:id="@+id/seventhRadioButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Грязный лёд и снег" />
+
+                    <RadioButton
+                        android:id="@+id/seventhRadioButton7"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Хвосты ягнят или перья птиц" />
+
+                    <RadioButton
+                        android:id="@+id/seventhRadioButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Рентгеновский снимок" />
+
+                    <RadioButton
+                        android:id="@+id/seventhRadioButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Подставку для книг" />
+
+                    <RadioButton
+                        android:id="@+id/seventhRadioButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Ничего из перечисленного" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="_______________________________________"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Вопрос 8: что видите на картинке?"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/eightRorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    app:srcCompat="@drawable/ror8"
+                    tools:srcCompat="@drawable/ror8" />
+
+                <RadioGroup
+                    android:id="@+id/group8"
+                    android:layout_width="match_parent"
+                    android:layout_height="353dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/eightRadioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Цветы или листья" />
+
+                    <RadioButton
+                        android:id="@+id/eightRadioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Рентгеновский снимок" />
+
+                    <RadioButton
+                        android:id="@+id/eightRadioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Розовое голубое и оранжевое" />
+
+                    <RadioButton
+                        android:id="@+id/eightRadioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Краба" />
+
+                    <RadioButton
+                        android:id="@+id/eightRadioButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Цветной герб" />
+
+                    <RadioButton
+                        android:id="@+id/eightRadioButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Огонь и лед, жизнь и смерть" />
+
+                    <RadioButton
+                        android:id="@+id/eightRadioButton7"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Двух животных" />
+
+                    <RadioButton
+                        android:id="@+id/eightRadioButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Голубые флаги" />
+
+                    <RadioButton
+                        android:id="@+id/eightRadioButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Части своего тела" />
+
+                    <RadioButton
+                        android:id="@+id/eightRadioButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Ничего из перечисленного" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="______________________________________"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Вопрос 9: что видите на картинке?"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ninethRorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    app:srcCompat="@drawable/ror9"
+                    tools:srcCompat="@drawable/ror9" />
+
+                <RadioGroup
+                    android:id="@+id/group9"
+                    android:layout_width="match_parent"
+                    android:layout_height="353dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/ninethRadioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Красное зеленое и желтое" />
+
+                    <RadioButton
+                        android:id="@+id/ninethRadioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Морских коньков или лобстеров" />
+
+                    <RadioButton
+                        android:id="@+id/ninethRadioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Цветы или водоросли" />
+
+                    <RadioButton
+                        android:id="@+id/ninethRadioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Части своего тело" />
+
+                    <RadioButton
+                        android:id="@+id/ninethRadioButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Дым, пламя или взрыв" />
+
+                    <RadioButton
+                        android:id="@+id/ninethRadioButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Оленей или оленьи рога" />
+
+                    <RadioButton
+                        android:id="@+id/ninethRadioButton7"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Двух человек: ведьм или Санта-Клаусов" />
+
+                    <RadioButton
+                        android:id="@+id/ninethRadioButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Облака с кровью" />
+
+                    <RadioButton
+                        android:id="@+id/ninethRadioButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Свечу" />
+
+                    <RadioButton
+                        android:id="@+id/ninethRadioButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Ничего из перечисленного" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="______________________________________"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="675dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="casual"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Вопрос 10: что видите на картинке?"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/tenthRorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    app:srcCompat="@drawable/ror10"
+                    tools:srcCompat="@drawable/ror10" />
+
+                <RadioGroup
+                    android:id="@+id/group10"
+                    android:layout_width="match_parent"
+                    android:layout_height="353dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/tenthRadioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Двух человек" />
+
+                    <RadioButton
+                        android:id="@+id/tenthRadioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Потрескавшуюся краску" />
+
+                    <RadioButton
+                        android:id="@+id/tenthRadioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Китайскую гравюру" />
+
+                    <RadioButton
+                        android:id="@+id/tenthRadioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Рентгеновский снимок" />
+
+                    <RadioButton
+                        android:id="@+id/tenthRadioButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Красное, синее или зеленое" />
+
+                    <RadioButton
+                        android:id="@+id/tenthRadioButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Паука, гусениц, крабов, насекомых" />
+
+                    <RadioButton
+                        android:id="@+id/tenthRadioButton7"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Части своих внутренностей" />
+
+                    <RadioButton
+                        android:id="@+id/tenthRadioButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="График, схему, географическую карту" />
+
+                    <RadioButton
+                        android:id="@+id/tenthRadioButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Цветник или разноцветных тропических рыбок" />
+
+                    <RadioButton
+                        android:id="@+id/tenthRadioButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="casual"
+                        android:text="Ничего из перечисленного" />
+
+                </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="______________________________________"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/descripBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="#FAF7F7"
+        android:fontFamily="casual"
+        android:onClick="onChange"
+        android:text="Закончить и расшифровать тест"
+        android:textColor="#0E0E0E"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

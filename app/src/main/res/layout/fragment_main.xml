@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MainFragment"
+    android:background="@drawable/main_background">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/exercisesBtn"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:fontFamily="casual"
+            android:onClick="onChange"
+            android:text="Упражнения"
+            android:textColor="#454343"
+            android:textSize="20sp"
+            app:rippleColor="#FFFFFF"
+            app:strokeColor="@color/white"
+            app:strokeWidth="0dp" />
+
+        <Button
+            android:id="@+id/theoryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:fontFamily="casual"
+            android:onClick="onChange"
+            android:text="Теория"
+            android:textColor="#090808"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/othersBtn"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:fontFamily="casual"
+            android:onClick="onChange"
+            android:text="Дополнительная литература"
+            android:textColor="#090808"
+            android:visibility="visible" />
+    </LinearLayout>
+</FrameLayout>

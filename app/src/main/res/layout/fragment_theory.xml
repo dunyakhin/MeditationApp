@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TheoryFragment"
+    android:background="@drawable/theory_background"
+    android:id="@+id/theory_fragment">
+
+    <ImageButton
+        android:id="@+id/backButton1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:onClick="onChange"
+        android:src="?attr/homeAsUpIndicator" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="628dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/howToBreathBtn"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:onClick="onChange"
+                android:text="Как следует дышать во ремя медитации"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/howOftenToMediateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="TODO"
+                android:fontFamily="casual"
+                android:onClick="onChange"
+                android:text="Как часто нужно медитировать"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/scienceProvesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:onClick="onChange"
+                android:text="Существуют ли научные доказательства пользы медитации"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/beGratitudeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:onClick="onChange"
+                android:text="Быть благодарным"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/realityOfThoughtsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:onClick="onChange"
+                android:text="Реальны ли твои мысли?"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/resistanceToWorriesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:onClick="onChange"
+                android:text="Устойчивость к тревожности"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/stomacheBreathBtn"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:onClick="onChange"
+                android:text="Дыхание животом"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/thingsIsThingsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_marginBottom="70dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:onClick="onChange"
+                android:text="Принятие вещей такими какие они есть"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

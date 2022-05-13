@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OthersLiterature"
+    android:background="@drawable/theory_background">
+
+    <ImageButton
+        android:id="@+id/backButton1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:onClick="onChange"
+        android:src="?attr/homeAsUpIndicator" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="628dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mainQuestionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:text="Андрей Курпатов - Главные вопросы жизни. Универсальные правила"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/redPiluleBtn"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="TODO"
+                android:fontFamily="casual"
+                android:text="Андрей Курпатов - Красная таблетка. Посмотри правде в глаза"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/momAndChildBtn"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:text="Андрей Курпатов - Как эмоциональное состояние матери влияет на ребёнка"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/iWantAHumanBtn"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:text="Юлия Юферова - Меня тянет к человеку, но останавливает страх показаться навязчивой"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/powerOfDisasterBtn"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="70dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:text="Патрик Теста - Сила горя: Зачем нужно оплакивать потери"
+                android:textColor="#4A4848"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/descrip_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/test_background"
+    tools:context=".fragments.DescriptionTestFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/backButton3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:onClick="onChange"
+        android:src="?attr/homeAsUpIndicator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="486dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Тест Роршаха – наверное, самый старый и самый известный из проективных психодиагностических тестов. Методика опубликована в 1921 году швейцарским психиатром Германом Роршахом (Hermann Rorschach) и до сих пор применяется для исследования психики и её нарушений. Испытуемому предлагается дать интерпретацию десяти чернильных клякс, каждая фигура служит стимулом для свободных ассоциаций – нужно назвать любое возникающее слово, образ или идею.  Несмотря на то, что валидность и эффективность методики окончательно не подтверждены, в руках опытного психолога или психиатра тест помогает получить предварительные данные для диагностики нарушений психики, которые впоследствии могут быть клинически проверены."
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/startTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#00FBF8F8"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:onClick="onChange"
+            android:text="Начать тестирование"
+            android:textColor="#131313"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>
