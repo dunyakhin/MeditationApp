@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.fragment_main);
 
         howToBreathBtn=findViewById(R.id.howToBreathBtn);
         howOftenToMediateBtn=findViewById(R.id.howOftenToMediateBtn);
@@ -74,16 +74,17 @@ public class MainActivity extends AppCompatActivity{
 
 
     //этот метод получает заголовок кнопки списка Теория который был нажат и затем передаёт этот заголовок для его поиска по бд
-   public void onTakeTitle(String titleOfBtn){
+   public void onTakeTitle(String [] titlesOfBtn){
 
-                bundle.putString("title",titleOfBtn);
-                bundle.putString("title1",titleOfBtn);
-                bundle.putString("title2",titleOfBtn);
-                bundle.putString("title3",titleOfBtn);
-                bundle.putString("title4",titleOfBtn);
-                bundle.putString("title5",titleOfBtn);
-                bundle.putString("title6",titleOfBtn);
-                bundle.putString("title7",titleOfBtn);
+                bundle.putString("firstButton",titlesOfBtn[0]);
+                bundle.putString("secondButton", titlesOfBtn[1]);
+                bundle.putString("thirdButton", titlesOfBtn[2]);
+                bundle.putString("fourthButton",titlesOfBtn[3]);
+                bundle.putString("fifthButton", titlesOfBtn[4]);
+                bundle.putString("sixthButton", titlesOfBtn[5]);
+                bundle.putString("seventhButton",titlesOfBtn[6]);
+                bundle.putString("eightButton", titlesOfBtn[7]);
+
 
         }
 
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity{
                         break;
                     case R.id.closeBtn:
                        fm.popBackStackImmediate();
-                       fm.isDestroyed();
+                       //fm.isDestroyed();
                         break;
                     case R.id.backButton1:
                         fm.popBackStackImmediate();
@@ -145,51 +146,51 @@ public class MainActivity extends AppCompatActivity{
                     case R.id.howToBreathBtn:
                         fragment=new ReadTheoryFragment();
                         //вот тут кладу заголовок первой нажатой кнопки "как правильно дышать"
-                        fm.setFragmentResult("title", bundle);
+                        fm.setFragmentResult("bundleKey", bundle);
                         ft.replace(R.id.theory_fragment, fragment);
                         ft.addToBackStack(null);
                         break;
                     case R.id.howOftenToMediateBtn:
                         fragment=new ReadTheoryFragment();
                         //здесь передаю заголовок второй нажатой кнопки "как часто медитировать"
-                        fm.setFragmentResult("title1", bundle);
+                        fm.setFragmentResult("bundleKey2", bundle);
                         ft.replace(R.id.theory_fragment, fragment);
                         ft.addToBackStack(null);
                         break;
                     case R.id.scienceProvesBtn:
                         fragment=new ReadTheoryFragment();
                         //по аналогии с предыдущими
-                        fm.setFragmentResult("title2", bundle);
+                        fm.setFragmentResult("bundleKey3", bundle);
                         ft.replace(R.id.theory_fragment, fragment);
                         ft.addToBackStack(null);
                         break;
                     case R.id.beGratitudeBtn:
                         fragment=new ReadTheoryFragment();
-                        fm.setFragmentResult("title3", bundle);
+                        fm.setFragmentResult("bundleKey4", bundle);
                         ft.replace(R.id.theory_fragment, fragment);
                         ft.addToBackStack(null);
                         break;
                     case R.id.realityOfThoughtsBtn:
                         fragment=new ReadTheoryFragment();
-                        fm.setFragmentResult("title4", bundle);
+                        fm.setFragmentResult("bundleKey5", bundle);
                         ft.replace(R.id.theory_fragment, fragment);
                         ft.addToBackStack(null);
                         break;
                     case R.id.resistanceToWorriesBtn:
                         fragment=new ReadTheoryFragment();
-                        fm.setFragmentResult("title5", bundle);
+                        fm.setFragmentResult("bundleKey6", bundle);
                         ft.replace(R.id.theory_fragment, fragment);
                         ft.addToBackStack(null);
                         break;
                     case R.id.stomacheBreathBtn:
                         fragment=new ReadTheoryFragment();
-                        fm.setFragmentResult("title6", bundle);
+                        fm.setFragmentResult("bundleKey7", bundle);
                         ft.replace(R.id.theory_fragment, fragment);
                         ft.addToBackStack(null);
                         break;
                     case R.id.thingsIsThingsBtn:
                         fragment=new ReadTheoryFragment();
-                        fm.setFragmentResult("title7", bundle);
+                        fm.setFragmentResult("bundleKey8", bundle);
                         ft.replace(R.id.theory_fragment, fragment);
                         ft.addToBackStack(null);
                         break;

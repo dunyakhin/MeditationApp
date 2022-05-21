@@ -19,7 +19,7 @@ public class MainFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 View main=inflater.inflate(R.layout.fragment_main, container,false);
-
+setRetainInstance(true);
 return main;
     }
 

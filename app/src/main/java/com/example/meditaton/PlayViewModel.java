@@ -1,6 +1,9 @@
 package com.example.meditaton;
 
 import android.app.Application;
+import android.app.FragmentManager;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -22,6 +25,7 @@ public class PlayViewModel extends AndroidViewModel {
     MediaPlayer player1=MediaPlayer.create(getApplication(),R.raw.rain);
     MediaPlayer player2=MediaPlayer.create(getApplication(),R.raw.flame);
     MediaPlayer player3=MediaPlayer.create(getApplication(),R.raw.forrest);
+
     public MutableLiveData timerData=new MutableLiveData<String>();
     public long timer;
     public CountDownTimer cdt;
@@ -59,18 +63,22 @@ public class PlayViewModel extends AndroidViewModel {
 //описываю в методе OnStop() остановку музыки и таймером, потом вызываю его в
     //MeditationFragment когда нажата кнопка stop или фрагмент с плеером и таймером закрывается
     public void onStop(String sound){
+
+//отлавливаю возможные ошибки при остановке таймера и плеера
         try{
             cdt.cancel();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        timerData.postValue(" ");
+
+
         switch(sound){
             case "Дождь":
                 player1.stop();
                 try {
                     player1.prepare();
                     player1.seekTo(0);
+
                 }
                 catch (Throwable t) {
                 }
@@ -116,15 +124,20 @@ public class PlayViewModel extends AndroidViewModel {
         cdt=new CountDownTimer(millsinfuture,1000) {
             @Override
             public void onTick(long l) {
+                //описываю что каждый тик таймера 1 секуда и каждый тик отправляю информацию в livedata
                timer=l/1000;
                timerData.setValue(DateUtils.formatElapsedTime(timer));
 
             }
             @Override
             public void onFinish() {
+                //по окончанию таймера очищаю livedata
                 timerData.setValue("");
             }
         }.start();
     }
 
+    public void onFindTheory(String title){
+
+    }
 }

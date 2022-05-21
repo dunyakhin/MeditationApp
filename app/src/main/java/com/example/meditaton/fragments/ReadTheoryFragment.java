@@ -31,7 +31,6 @@ public class ReadTheoryFragment extends Fragment {
     DataBaseHelper dataBaseHelper;
     SQLiteDatabase db;
     Cursor userCursor;
-
     MainActivity mainActivity;
     String title;
 
@@ -49,65 +48,54 @@ public class ReadTheoryFragment extends Fragment {
 
 
         //получаю заголовок который мне передали из MainActivity и присваиваю его title, потом я буду по этому title искать текст в базе данных
-        getParentFragmentManager().setFragmentResultListener("title", this, new FragmentResultListener() {
+        getParentFragmentManager().setFragmentResultListener("bundleKey", this, new FragmentResultListener() {
             @Override
             public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                //вызываю метод mainActivity onTakeTitle() в который кладу наименование нажатой кнопки из списка Теория
-                //данный метод передает заголовок в MainActivity, где уже в MainActivity я кладу этот заголовок в title1, title2 и тд в зависимости от нажатой кнопки
-                mainActivity.onTakeTitle("Как следует дышать во время медитации");
-                title=result.getString("title");
-            }
-        });
-        getParentFragmentManager().setFragmentResultListener("title1", this, new FragmentResultListener() {
-            @Override
-            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                mainActivity.onTakeTitle("Как часто нужно медитировать");
-                title=result.getString("title");
+                title=result.getString("firstButton");
 
             }
         });
-        getParentFragmentManager().setFragmentResultListener("title2", this, new FragmentResultListener() {
+        getParentFragmentManager().setFragmentResultListener("bundleKey2", this, new FragmentResultListener() {
             @Override
             public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                mainActivity.onTakeTitle("Существуют ли научные доказательства пользы медитации");
-                title=result.getString("title");
-            }
-        });
-        getParentFragmentManager().setFragmentResultListener("title3", this, new FragmentResultListener() {
-            @Override
-            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                mainActivity.onTakeTitle("Быть благодарным");
-                title=result.getString("title");
-            }
-        });
-        getParentFragmentManager().setFragmentResultListener("title4", this, new FragmentResultListener() {
-            @Override
-            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                mainActivity.onTakeTitle("Реальны ли твои мысли");
-                title=result.getString("title");
-            }
-        });
-        getParentFragmentManager().setFragmentResultListener("title5", this, new FragmentResultListener() {
-            @Override
-            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                mainActivity.onTakeTitle("Устойчивость к тревожности");
-                title=result.getString("title");
-            }
-        });
-        getParentFragmentManager().setFragmentResultListener("title6", this, new FragmentResultListener() {
-            @Override
-            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                mainActivity.onTakeTitle("Дыхание животом");
-                title=result.getString("title");
+                title=result.getString("secondButton");
 
             }
         });
-        getParentFragmentManager().setFragmentResultListener("title7", this, new FragmentResultListener() {
+        getParentFragmentManager().setFragmentResultListener("bundleKey3", this, new FragmentResultListener() {
             @Override
             public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                mainActivity.onTakeTitle("Принятие вещей такими какие они есть");
-                title=result.getString("title");
-
+                title=result.getString("thirdButton");
+            }
+        });
+        getParentFragmentManager().setFragmentResultListener("bundleKey4", this, new FragmentResultListener() {
+            @Override
+            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
+                title=result.getString("fourthButton");
+            }
+        });
+        getParentFragmentManager().setFragmentResultListener("bundleKey5", this, new FragmentResultListener() {
+            @Override
+            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
+                title=result.getString("fifthButton");
+            }
+        });
+        getParentFragmentManager().setFragmentResultListener("bundleKey6", this, new FragmentResultListener() {
+            @Override
+            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
+                title=result.getString("sixthButton");
+            }
+        });
+        getParentFragmentManager().setFragmentResultListener("bundleKey7", this, new FragmentResultListener() {
+            @Override
+            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
+                title=result.getString("seventhButton");
+            }
+        });
+        getParentFragmentManager().setFragmentResultListener("bundleKey8", this, new FragmentResultListener() {
+            @Override
+            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
+                title=result.getString("eightButton");
             }
         });
 

@@ -18,38 +18,48 @@
         android:onClick="onChange"
         android:src="?attr/homeAsUpIndicator" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical">
+        android:layout_marginTop="50dp">
 
-        <Button
-            android:id="@+id/testBtn"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:backgroundTint="#00FFFFFF"
-            android:fontFamily="casual"
-            android:onClick="onChange"
-            android:text="Тест Роршаха"
-            android:textColor="#575656"
-            android:textSize="18sp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/meditationBtn"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:backgroundTint="#00FFFFFF"
-            android:fontFamily="casual"
-            android:onClick="onChange"
-            android:text="медитация"
-            android:textColor="#575656"
-            android:textSize="18sp" />
+            <Button
+                android:id="@+id/testBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:onClick="onChange"
+                android:text="Тест Роршаха"
+                android:textColor="#575656"
+                android:textSize="18sp" />
 
-        <fragment
-            android:id="@+id/fragmentTestOrMedit"
-            android:name="com.example.meditaton.fragments.EmptyFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/meditationBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="casual"
+                android:onClick="onChange"
+                android:text="медитация"
+                android:textColor="#575656"
+                android:textSize="18sp" />
+
+            <fragment
+                android:id="@+id/fragmentTestOrMedit"
+                android:name="com.example.meditaton.fragments.EmptyFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
 </FrameLayout>

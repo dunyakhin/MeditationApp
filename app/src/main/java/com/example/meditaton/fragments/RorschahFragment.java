@@ -14,7 +14,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.meditaton.R;
-//вот тут жестко нахардкодил, в этом фрагменте определяю все 100 радио-переключателей и объявляю счетчик result1
+//вот тут жестко нахардкодил, в этом фрагменте определяю все 100 радио-переключателей и объявляю счетчик результата теста result1
 public class RorschahFragment extends Fragment implements View.OnClickListener {
     Button resultBtn, descripBtn;
 RadioGroup group1,group2,group3,group4,group5,group6,group7,group8,group9,group10;
@@ -162,7 +162,7 @@ RadioButton tenthRadioButton1,tenthRadioButton2, tenthRadioButton3, tenthRadioBu
 
     //в момент когда фрагмент исчезает с экрана, то есть нажимается кнопка показать результат, проверяем что пользователь выбрал в тесте
     //и если это ответы которые несут негативный окрас к счетчику result1 прибавляем 1 за каждый негативный ответ
-    //после этого передаём итоговый результат этого счетчика в DescriptionTestFragment, который его ждет и отображает уже у себя среди текста
+    //после этого передаём итоговый результат этого счетчика в DescriptionTestFragment, который его ждет и отображает уже у себя среди текста "Ваш результат resul1..."
     @Override
     public void onStop() {
         result1 = 0;

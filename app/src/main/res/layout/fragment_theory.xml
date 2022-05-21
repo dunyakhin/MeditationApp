@@ -33,7 +33,7 @@
                 android:backgroundTint="#00FFFFFF"
                 android:fontFamily="casual"
                 android:onClick="onChange"
-                android:text="Как следует дышать во ремя медитации"
+                android:text="Как следует дышать во время медитации"
                 android:textColor="#4A4848"
                 android:textSize="18sp" />
 
@@ -82,7 +82,7 @@
                 android:backgroundTint="#00FFFFFF"
                 android:fontFamily="casual"
                 android:onClick="onChange"
-                android:text="Реальны ли твои мысли?"
+                android:text="Реальны ли твои мысли"
                 android:textColor="#4A4848"
                 android:textSize="18sp" />
 

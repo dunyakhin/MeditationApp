@@ -4,16 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/font/monserrat.xml" value="0.26974358974358975" />
+        <entry key="app/src/main/res/layout-land/fragment_exercices.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-land/fragment_exercises.xml" value="0.11" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_roschar.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_description_test.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_empty.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/fragment_exercises.xml" value="0.2612481857764877" />
+        <entry key="app/src/main/res/layout/fragment_exercices.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_exercises.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.24584197998046875" />
         <entry key="app/src/main/res/layout/fragment_meditation.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_others_literature.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_read_theory.xml" value="0.23369565217391305" />
-        <entry key="app/src/main/res/layout/fragment_rorschah.xml" value="0.154557463672391" />
+        <entry key="app/src/main/res/layout/fragment_rorschah.xml" value="0.1399650959860384" />
         <entry key="app/src/main/res/layout/fragment_theory.xml" value="0.15185185185185185" />
         <entry key="app/src/main/res/layout/rorscharch_test.xml" value="0.16875" />
         <entry key="app/src/main/res/layout/slide_in_left.xml" value="0.18659420289855072" />
